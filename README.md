@@ -13,7 +13,23 @@ Overall framework of PV power forecasting based on ACCNet.
 <img src="docs/fig1.png">
 </p>
 
+## Citation
 
+If you use this benchmark in your research, please cite this paper.
+
+```
+@article{LIU2023121139,
+title = {An innovative short-term multihorizon photovoltaic power output forecasting method based on variational mode decomposition and a capsule convolutional neural network},
+journal = {Applied Energy},
+volume = {343},
+pages = {121139},
+year = {2023},
+issn = {0306-2619},
+doi = {https://doi.org/10.1016/j.apenergy.2023.121139},
+url = {https://www.sciencedirect.com/science/article/pii/S0306261923005032},
+author = {Yunfei Liu and Yan Liu and Hanhu Cai and Junran Zhang},
+}
+```
 
 ## Contact Information
 
