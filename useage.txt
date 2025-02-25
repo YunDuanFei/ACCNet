@@ -1,0 +1,14 @@
+export CUDA_VISIBLE_DEVICES=0,1
+export OMP_NUM_THREADS=1
+python -m torch.distributed.launch --nproc_per_node=2 --master_port=501356 --use_env main.py
+
+tensorboard  --logdir=./tensorboard
+
+run:
+	0、 run select.py (70-Site_3-BP-Solar.csv)
+	1、 ecdn.py 数据校正，归一化，可视化  (select_70-Site_3-BP-Solar.csv)
+	2、 pearson.py 数据筛选，Pearson可视化，选择相关性大的特征  (noout_70-Site_3-BP-Solar.csv)
+	3、 toimgs.py 根据相关性大的特征进行数据分解，并2D化  (norm_70-Site_3-BP-Solar.csv)
+
+data:
+	https://dkasolarcentre.com.au/locations/alice-springs
