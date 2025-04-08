@@ -5,7 +5,7 @@ python -m torch.distributed.launch --nproc_per_node=2 --master_port=501356 --use
 tensorboard  --logdir=./tensorboard
 
 run:
-	0、 run select.py (70-Site_3-BP-Solar.csv)
+	0、 run select.py (70-Site_3-BP-Solar.csv) (文件缺失，功能：缺失值填充，推荐使用临近值填充或过往数据平均)
 	1、 ecdn.py 数据校正，归一化，可视化  (select_70-Site_3-BP-Solar.csv)
 	2、 pearson.py 数据筛选，Pearson可视化，选择相关性大的特征  (noout_70-Site_3-BP-Solar.csv)
 	3、 toimgs.py 根据相关性大的特征进行数据分解，并2D化  (norm_70-Site_3-BP-Solar.csv)
